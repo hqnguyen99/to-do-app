@@ -81,7 +81,7 @@ export default function Home() {
   ))
   const prevTaskLength = usePrevious(tasks.length);
   useEffect(()=>{
-    if(prevTaskLength == tasks.lenght+1){
+    if(prevTaskLength == tasks.length+1){
       listHeadingRef.current.focus();
     }
   },[prevTaskLength,tasks.length])
